@@ -1,0 +1,161 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+/* Navbar */
+header {
+    background: #000;
+    padding: 15px 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #ff1a1a;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff1a1a;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #000000, #1a0000);
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+/* Profile Image (BIGGER & ELEGANT) */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff1a1a;
+    margin-bottom: 25px;
+    box-shadow: 0 0 30px rgba(255, 26, 26, 0.6);
+    outline: 2px solid #1a1a1a;
+    outline-offset: 6px;
+    transition: 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Text */
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #ff1a1a;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff1a1a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #cc0000;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Smaller image on mobile */
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,184 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    background: black;
+    padding: 15px 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #ff1a1a;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff1a1a;
+}
+
+/* SKILLS + EXPERIENCE */
+.skills, .experience {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.skills h2, .experience h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ff1a1a;
+    margin-bottom: 25px;
+}
+
+/* BOXES */
+.skills-box,
+.exp-box {
+    max-width: 750px;
+    margin: auto;
+    background: #111;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #222;
+    transition: 0.3s;
+}
+
+.skills-box ul {
+    list-style: none;
+    text-align: left;
+    color: #ccc;
+    line-height: 2;
+}
+
+.exp-box p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* HOVER */
+.skills-box:hover,
+.exp-box:hover {
+    border-color: #ff1a1a;
+    box-shadow: 0 0 20px rgba(255, 26, 26, 0.3);
+}
+
+/* 🔥 SCATTERED PHOTO SECTION */
+.photo-scatter {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.photo-scatter h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ff1a1a;
+    margin-bottom: 40px;
+}
+
+/* CONTAINER */
+.scatter-container {
+    position: relative;
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+}
+
+/* IMAGES */
+.pic {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #222;
+    position: absolute;
+    transition: 0.3s;
+}
+
+/* SCATTER POSITIONS */
+.pic1 { top: 20px; left: 40px; transform: rotate(-8deg); }
+.pic2 { top: 60px; left: 220px; transform: rotate(6deg); }
+.pic3 { top: 0px; left: 420px; transform: rotate(-4deg); }
+.pic4 { top: 220px; left: 120px; transform: rotate(10deg); }
+.pic5 { top: 240px; left: 340px; transform: rotate(-10deg); }
+
+/* HOVER EFFECT */
+.pic:hover {
+    transform: scale(1.1) rotate(0deg);
+    z-index: 10;
+    border-color: #ff1a1a;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: gray;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* stack photos nicely */
+    .scatter-container {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .pic {
+        position: static;
+        transform: none;
+        width: 140px;
+        height: 140px;
+    }
+}

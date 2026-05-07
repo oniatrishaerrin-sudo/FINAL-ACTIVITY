@@ -1,0 +1,145 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* NAVBAR (DO NOT CHANGE STYLE STRUCTURE) */
+header {
+    background: black;
+    padding: 15px 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #ff1a1a;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ff1a1a;
+}
+
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ff1a1a;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* IMAGE (BIG BUT ELEGANT) */
+.about-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff1a1a;
+    box-shadow: 0 0 30px rgba(255, 26, 26, 0.5);
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.about-img:hover {
+    transform: scale(1.03);
+}
+
+/* TEXT */
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ARROWS */
+.page-nav {
+    margin-top: 40px;
+}
+
+.arrow {
+    font-size: 28px;
+    padding: 10px 18px;
+    margin: 10px;
+    border: 2px solid #ff1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background: #ff1a1a;
+}
+
+/* FOOTER (UNCHANGED STYLE) */
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: gray;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .about-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+}
